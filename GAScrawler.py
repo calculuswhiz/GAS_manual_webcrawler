@@ -13,5 +13,5 @@ with open("Index.txt") as fp:
             sysCall = "curl "+carg+line.strip()+"' > "+line.strip()[:line.strip().find("#")]
             print(sysCall)
             system(sysCall)
-            sleep(random.uniform(1.1,2.5))
+            sleep(random.uniform(.5,1.0))
         counter+=1
