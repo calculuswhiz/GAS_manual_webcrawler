@@ -7,7 +7,7 @@ carg = "'https://sourceware.org/binutils/docs/as/"
 counter = 0
 dirstruct = []
 
-with open("Index.txt") as fp:
+with open("Index.2.25.txt") as fp:
     for line in fp:
         if counter%2!=0:
             sysCall = "curl "+carg+line.strip()+"' > "+line.strip()[:line.strip().find("#")]
