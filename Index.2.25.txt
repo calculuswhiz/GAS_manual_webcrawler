@@ -1,5 +1,7 @@
 Using as
     index.html#Top
+1 Overview
+    Overview.html#Overview
 1.1 Structure of this Manual
     Manual.html#Manual
 1.2 The GNU Assembler
@@ -14,6 +16,8 @@ Using as
     Object.html#Object
 1.7 Error and Warning Messages
     Errors.html#Errors
+2 Command-Line Options
+    Invoking.html#Invoking
 2.1 Enable Listings: -a[cdghlns]
     a.html#a
 2.2 --alternate
@@ -48,6 +52,8 @@ Using as
     W.html#W
 2.17 Generate Object File in Spite of Errors: -Z
     Z.html#Z
+3 Syntax
+    Syntax.html#Syntax
 3.1 Preprocessing
     Preprocessing.html#Preprocessing
 3.2 Whitespace
@@ -74,6 +80,8 @@ Using as
     Bignums.html#Bignums
 3.6.2.3 Flonums
     Flonums.html#Flonums
+4 Sections and Relocation
+    Sections.html#Sections
 4.1 Background
     Secs-Background.html#Secs-Background
 4.2 Linker Sections
@@ -84,6 +92,8 @@ Using as
     Sub_002dSections.html#Sub_002dSections
 4.5 bss Section
     bss.html#bss
+5 Symbols
+    Symbols.html#Symbols
 5.1 Labels
     Labels.html#Labels
 5.2 Giving Symbols Other Values
@@ -112,6 +122,8 @@ Using as
     COFF-Symbols.html#COFF-Symbols
 5.5.5 Symbol Attributes for SOM
     SOM-Symbols.html#SOM-Symbols
+6 Expressions
+    Expressions.html#Expressions
 6.1 Empty Expressions
     Empty-Exprs.html#Empty-Exprs
 6.2 Integer Expressions
@@ -124,6 +136,8 @@ Using as
     Prefix-Ops.html#Prefix-Ops
 6.2.4 Infix Operators
     Infix-Ops.html#Infix-Ops
+7 Assembler Directives
+    Pseudo-Ops.html#Pseudo-Ops
 7.1 .abort
     Abort.html#Abort
 7.2 .ABORT (COFF)
@@ -374,6 +388,8 @@ Using as
     Word.html#Word
 7.125 Deprecated Directives
     Deprecated.html#Deprecated
+8 Object Attributes
+    Object-Attributes.html#Object-Attributes
 8.1 gnu Object Attributes
     GNU-Object-Attributes.html#GNU-Object-Attributes
 8.1.1 Common gnu attributes
@@ -384,6 +400,8 @@ Using as
     GNU-Object-Attributes.html#GNU-Object-Attributes
 8.2 Defining New Object Attributes
     Defining-New-Object-Attributes.html#Defining-New-Object-Attributes
+9 Machine Dependent Features
+    Machine-Dependencies.html#Machine-Dependencies
 9.1 AArch64 Dependent Features
     AArch64_002dDependent.html#AArch64_002dDependent
 9.1.1 Options
@@ -1270,10 +1288,40 @@ Using as
     Literal-Prefix-Directive.html#Literal-Prefix-Directive
 9.53.5.7 absolute-literals
     Absolute-Literals-Directive.html#Absolute-Literals-Directive
+10 Reporting Bugs
+    Reporting-Bugs.html#Reporting-Bugs
 10.1 Have You Found a Bug?
     Bug-Criteria.html#Bug-Criteria
 10.2 How to Report Bugs
     Bug-Reporting.html#Bug-Reporting
+11 Acknowledgements
+    Acknowledgements.html#Acknowledgements
+Appendix A GNU Free Documentation License
+    GNU-Free-Documentation-License.html#GNU-Free-Documentation-License
+AS Index
+    AS-Index.html#AS-Index
+Overview
+    Overview.html#Overview
+(dir)
+    ../index.html#dir
+Overview
+    Overview.html#Overview
+Invoking
+    Invoking.html#Invoking
+Syntax
+    Syntax.html#Syntax
+Sections
+    Sections.html#Sections
+Symbols
+    Symbols.html#Symbols
+Expressions
+    Expressions.html#Expressions
+Pseudo Ops
+    Pseudo-Ops.html#Pseudo-Ops
+Object Attributes
+    Object-Attributes.html#Object-Attributes
+Machine Dependencies
+    Machine-Dependencies.html#Machine-Dependencies
 Reporting Bugs
     Reporting-Bugs.html#Reporting-Bugs
 Acknowledgements
