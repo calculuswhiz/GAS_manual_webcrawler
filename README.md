@@ -7,7 +7,7 @@ Just run `python GAScrawler.py` and let the program handle the rest. Feel free t
 
 If you want to update, you may want to run `rm *.html` prior to running the crawler.
 
-Index.txt is just the list of all the URLs (2.24).
+Index.txt is just the list of all the URLs (2.24).<br>
 Index.2.25.txt is the list for version 2.25.
 
 One-liners:
