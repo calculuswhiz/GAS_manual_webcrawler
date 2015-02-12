@@ -1,0 +1,1284 @@
+Using as
+    index.html#Top
+1.1 Structure of this Manual
+    Manual.html#Manual
+1.2 The GNU Assembler
+    GNU-Assembler.html#GNU-Assembler
+1.3 Object File Formats
+    Object-Formats.html#Object-Formats
+1.4 Command Line
+    Command-Line.html#Command-Line
+1.5 Input Files
+    Input-Files.html#Input-Files
+1.6 Output (Object) File
+    Object.html#Object
+1.7 Error and Warning Messages
+    Errors.html#Errors
+2.1 Enable Listings: -a[cdghlns]
+    a.html#a
+2.2 --alternate
+    alternate.html#alternate
+2.3 -D
+    D.html#D
+2.4 Work Faster: -f
+    f.html#f
+2.5 .include Search Path: -I path
+    I.html#I
+2.6 Difference Tables: -K
+    K.html#K
+2.7 Include Local Symbols: -L
+    L.html#L
+2.8 Configuring listing output: --listing
+    listing.html#listing
+2.9 Assemble in MRI Compatibility Mode: -M
+    M.html#M
+2.10 Dependency Tracking: --MD
+    MD.html#MD
+2.11 Name the Object File: -o
+    o.html#o
+2.12 Join Data and Text Sections: -R
+    R.html#R
+2.13 Display Assembly Statistics: --statistics
+    statistics.html#statistics
+2.14 Compatible Output: --traditional-format
+    traditional_002dformat.html#traditional_002dformat
+2.15 Announce Version: -v
+    v.html#v
+2.16 Control Warnings: -W, --warn, --no-warn, --fatal-warnings
+    W.html#W
+2.17 Generate Object File in Spite of Errors: -Z
+    Z.html#Z
+3.1 Preprocessing
+    Preprocessing.html#Preprocessing
+3.2 Whitespace
+    Whitespace.html#Whitespace
+3.3 Comments
+    Comments.html#Comments
+3.4 Symbols
+    Symbol-Intro.html#Symbol-Intro
+3.5 Statements
+    Statements.html#Statements
+3.6 Constants
+    Constants.html#Constants
+3.6.1 Character Constants
+    Characters.html#Characters
+3.6.1.1 Strings
+    Strings.html#Strings
+3.6.1.2 Characters
+    Chars.html#Chars
+3.6.2 Number Constants
+    Numbers.html#Numbers
+3.6.2.1 Integers
+    Integers.html#Integers
+3.6.2.2 Bignums
+    Bignums.html#Bignums
+3.6.2.3 Flonums
+    Flonums.html#Flonums
+4.1 Background
+    Secs-Background.html#Secs-Background
+4.2 Linker Sections
+    Ld-Sections.html#Ld-Sections
+4.3 Assembler Internal Sections
+    As-Sections.html#As-Sections
+4.4 Sub-Sections
+    Sub_002dSections.html#Sub_002dSections
+4.5 bss Section
+    bss.html#bss
+5.1 Labels
+    Labels.html#Labels
+5.2 Giving Symbols Other Values
+    Setting-Symbols.html#Setting-Symbols
+5.3 Symbol Names
+    Symbol-Names.html#Symbol-Names
+5.4 The Special Dot Symbol
+    Dot.html#Dot
+5.5 Symbol Attributes
+    Symbol-Attributes.html#Symbol-Attributes
+5.5.1 Value
+    Symbol-Value.html#Symbol-Value
+5.5.2 Type
+    Symbol-Type.html#Symbol-Type
+5.5.3 Symbol Attributes: a.out
+    a_002eout-Symbols.html#a_002eout-Symbols
+5.5.3.1 Descriptor
+    Symbol-Desc.html#Symbol-Desc
+5.5.3.2 Other
+    Symbol-Other.html#Symbol-Other
+5.5.4 Symbol Attributes for COFF
+    COFF-Symbols.html#COFF-Symbols
+5.5.4.1 Primary Attributes
+    COFF-Symbols.html#COFF-Symbols
+5.5.4.2 Auxiliary Attributes
+    COFF-Symbols.html#COFF-Symbols
+5.5.5 Symbol Attributes for SOM
+    SOM-Symbols.html#SOM-Symbols
+6.1 Empty Expressions
+    Empty-Exprs.html#Empty-Exprs
+6.2 Integer Expressions
+    Integer-Exprs.html#Integer-Exprs
+6.2.1 Arguments
+    Arguments.html#Arguments
+6.2.2 Operators
+    Operators.html#Operators
+6.2.3 Prefix Operator
+    Prefix-Ops.html#Prefix-Ops
+6.2.4 Infix Operators
+    Infix-Ops.html#Infix-Ops
+7.1 .abort
+    Abort.html#Abort
+7.2 .ABORT (COFF)
+    ABORT-_0028COFF_0029.html#ABORT-_0028COFF_0029
+7.3 .align abs-expr, abs-expr, abs-expr
+    Align.html#Align
+7.4 .altmacro
+    Altmacro.html#Altmacro
+7.5 .ascii "string"...
+    Ascii.html#Ascii
+7.6 .asciz "string"...
+    Asciz.html#Asciz
+7.7 .balign[wl] abs-expr, abs-expr, abs-expr
+    Balign.html#Balign
+7.8 .bundle_align_mode abs-expr
+    Bundle-directives.html#Bundle-directives
+7.9 .bundle_lock and .bundle_unlock
+    Bundle-directives.html#Bundle-directives
+7.10 .byte expressions
+    Byte.html#Byte
+7.11 .cfi_sections section_list
+    CFI-directives.html#CFI-directives
+7.12 .cfi_startproc [simple]
+    CFI-directives.html#CFI-directives
+7.13 .cfi_endproc
+    CFI-directives.html#CFI-directives
+7.14 .cfi_personality encoding [, exp]
+    CFI-directives.html#CFI-directives
+7.15 .cfi_lsda encoding [, exp]
+    CFI-directives.html#CFI-directives
+7.16 .cfi_def_cfa register, offset
+    CFI-directives.html#CFI-directives
+7.17 .cfi_def_cfa_register register
+    CFI-directives.html#CFI-directives
+7.18 .cfi_def_cfa_offset offset
+    CFI-directives.html#CFI-directives
+7.19 .cfi_adjust_cfa_offset offset
+    CFI-directives.html#CFI-directives
+7.20 .cfi_offset register, offset
+    CFI-directives.html#CFI-directives
+7.21 .cfi_rel_offset register, offset
+    CFI-directives.html#CFI-directives
+7.22 .cfi_register register1, register2
+    CFI-directives.html#CFI-directives
+7.23 .cfi_restore register
+    CFI-directives.html#CFI-directives
+7.24 .cfi_undefined register
+    CFI-directives.html#CFI-directives
+7.25 .cfi_same_value register
+    CFI-directives.html#CFI-directives
+7.26 .cfi_remember_state,
+    CFI-directives.html#CFI-directives
+7.27 .cfi_return_column register
+    CFI-directives.html#CFI-directives
+7.28 .cfi_signal_frame
+    CFI-directives.html#CFI-directives
+7.29 .cfi_window_save
+    CFI-directives.html#CFI-directives
+7.30 .cfi_escape expression[, ...]
+    CFI-directives.html#CFI-directives
+7.31 .cfi_val_encoded_addr register, encoding, label
+    CFI-directives.html#CFI-directives
+7.32 .comm symbol , length 
+    Comm.html#Comm
+7.33 .data subsection
+    Data.html#Data
+7.34 .def name
+    Def.html#Def
+7.35 .desc symbol, abs-expression
+    Desc.html#Desc
+7.36 .dim
+    Dim.html#Dim
+7.37 .double flonums
+    Double.html#Double
+7.38 .eject
+    Eject.html#Eject
+7.39 .else
+    Else.html#Else
+7.40 .elseif
+    Elseif.html#Elseif
+7.41 .end
+    End.html#End
+7.42 .endef
+    Endef.html#Endef
+7.43 .endfunc
+    Endfunc.html#Endfunc
+7.44 .endif
+    Endif.html#Endif
+7.45 .equ symbol, expression
+    Equ.html#Equ
+7.46 .equiv symbol, expression
+    Equiv.html#Equiv
+7.47 .eqv symbol, expression
+    Eqv.html#Eqv
+7.48 .err
+    Err.html#Err
+7.49 .error "string"
+    Error.html#Error
+7.50 .exitm
+    Exitm.html#Exitm
+7.51 .extern
+    Extern.html#Extern
+7.52 .fail expression
+    Fail.html#Fail
+7.53 .file
+    File.html#File
+7.54 .fill repeat , size , value
+    Fill.html#Fill
+7.55 .float flonums
+    Float.html#Float
+7.56 .func name[,label]
+    Func.html#Func
+7.57 .global symbol, .globl symbol
+    Global.html#Global
+7.58 .gnu_attribute tag,value
+    Gnu_005fattribute.html#Gnu_005fattribute
+7.59 .hidden names
+    Hidden.html#Hidden
+7.60 .hword expressions
+    hword.html#hword
+7.61 .ident
+    Ident.html#Ident
+7.62 .if absolute expression
+    If.html#If
+7.63 .incbin "file"[,skip[,count]]
+    Incbin.html#Incbin
+7.64 .include "file"
+    Include.html#Include
+7.65 .int expressions
+    Int.html#Int
+7.66 .internal names
+    Internal.html#Internal
+7.67 .irp symbol,values...
+    Irp.html#Irp
+7.68 .irpc symbol,values...
+    Irpc.html#Irpc
+7.69 .lcomm symbol , length
+    Lcomm.html#Lcomm
+7.70 .lflags
+    Lflags.html#Lflags
+7.71 .line line-number
+    Line.html#Line
+7.72 .linkonce [type]
+    Linkonce.html#Linkonce
+7.73 .list
+    List.html#List
+7.74 .ln line-number
+    Ln.html#Ln
+7.75 .loc fileno lineno [column] [options]
+    Loc.html#Loc
+7.76 .loc_mark_labels enable
+    Loc_005fmark_005flabels.html#Loc_005fmark_005flabels
+7.77 .local names
+    Local.html#Local
+7.78 .long expressions
+    Long.html#Long
+7.79 .macro
+    Macro.html#Macro
+7.80 .mri val
+    MRI.html#MRI
+7.81 .noaltmacro
+    Noaltmacro.html#Noaltmacro
+7.82 .nolist
+    Nolist.html#Nolist
+7.83 .octa bignums
+    Octa.html#Octa
+7.84 .offset loc
+    Offset.html#Offset
+7.85 .org new-lc , fill
+    Org.html#Org
+7.86 .p2align[wl] abs-expr, abs-expr, abs-expr
+    P2align.html#P2align
+7.87 .popsection
+    PopSection.html#PopSection
+7.88 .previous
+    Previous.html#Previous
+7.89 .print string
+    Print.html#Print
+7.90 .protected names
+    Protected.html#Protected
+7.91 .psize lines , columns
+    Psize.html#Psize
+7.92 .purgem name
+    Purgem.html#Purgem
+7.93 .pushsection name [, subsection] [, "flags"[, @type[,arguments]]]
+    PushSection.html#PushSection
+7.94 .quad bignums
+    Quad.html#Quad
+7.95 .reloc offset, reloc_name[, expression]
+    Reloc.html#Reloc
+7.96 .rept count
+    Rept.html#Rept
+7.97 .sbttl "subheading"
+    Sbttl.html#Sbttl
+7.98 .scl class
+    Scl.html#Scl
+7.99 .section name
+    Section.html#Section
+7.100 .set symbol, expression
+    Set.html#Set
+7.101 .short expressions
+    Short.html#Short
+7.102 .single flonums
+    Single.html#Single
+7.103 .size
+    Size.html#Size
+7.104 .skip size , fill
+    Skip.html#Skip
+7.105 .sleb128 expressions
+    Sleb128.html#Sleb128
+7.106 .space size , fill
+    Space.html#Space
+7.107 .stabd, .stabn, .stabs
+    Stab.html#Stab
+7.108 .string "str", .string8 "str", .string16
+    String.html#String
+7.109 .struct expression
+    Struct.html#Struct
+7.110 .subsection name
+    SubSection.html#SubSection
+7.111 .symver
+    Symver.html#Symver
+7.112 .tag structname
+    Tag.html#Tag
+7.113 .text subsection
+    Text.html#Text
+7.114 .title "heading"
+    Title.html#Title
+7.115 .type
+    Type.html#Type
+7.116 .uleb128 expressions
+    Uleb128.html#Uleb128
+7.117 .val addr
+    Val.html#Val
+7.118 .version "string"
+    Version.html#Version
+7.119 .vtable_entry table, offset
+    VTableEntry.html#VTableEntry
+7.120 .vtable_inherit child, parent
+    VTableInherit.html#VTableInherit
+7.121 .warning "string"
+    Warning.html#Warning
+7.122 .weak names
+    Weak.html#Weak
+7.123 .weakref alias, target
+    Weakref.html#Weakref
+7.124 .word expressions
+    Word.html#Word
+7.125 Deprecated Directives
+    Deprecated.html#Deprecated
+8.1 gnu Object Attributes
+    GNU-Object-Attributes.html#GNU-Object-Attributes
+8.1.1 Common gnu attributes
+    GNU-Object-Attributes.html#GNU-Object-Attributes
+8.1.2 MIPS Attributes
+    GNU-Object-Attributes.html#GNU-Object-Attributes
+8.1.3 PowerPC Attributes
+    GNU-Object-Attributes.html#GNU-Object-Attributes
+8.2 Defining New Object Attributes
+    Defining-New-Object-Attributes.html#Defining-New-Object-Attributes
+9.1 AArch64 Dependent Features
+    AArch64_002dDependent.html#AArch64_002dDependent
+9.1.1 Options
+    AArch64-Options.html#AArch64-Options
+9.1.2 Architecture Extensions
+    AArch64-Extensions.html#AArch64-Extensions
+9.1.3 Syntax
+    AArch64-Syntax.html#AArch64-Syntax
+9.1.3.1 Special Characters
+    AArch64_002dChars.html#AArch64_002dChars
+9.1.3.2 Register Names
+    AArch64_002dRegs.html#AArch64_002dRegs
+9.1.3.3 Relocations
+    AArch64_002dRelocations.html#AArch64_002dRelocations
+9.1.4 Floating Point
+    AArch64-Floating-Point.html#AArch64-Floating-Point
+9.1.5 AArch64 Machine Directives
+    AArch64-Directives.html#AArch64-Directives
+9.1.6 Opcodes
+    AArch64-Opcodes.html#AArch64-Opcodes
+9.1.7 Mapping Symbols
+    AArch64-Mapping-Symbols.html#AArch64-Mapping-Symbols
+9.2 Alpha Dependent Features
+    Alpha_002dDependent.html#Alpha_002dDependent
+9.2.1 Notes
+    Alpha-Notes.html#Alpha-Notes
+9.2.2 Options
+    Alpha-Options.html#Alpha-Options
+9.2.3 Syntax
+    Alpha-Syntax.html#Alpha-Syntax
+9.2.3.1 Special Characters
+    Alpha_002dChars.html#Alpha_002dChars
+9.2.3.2 Register Names
+    Alpha_002dRegs.html#Alpha_002dRegs
+9.2.3.3 Relocations
+    Alpha_002dRelocs.html#Alpha_002dRelocs
+9.2.4 Floating Point
+    Alpha-Floating-Point.html#Alpha-Floating-Point
+9.2.5 Alpha Assembler Directives
+    Alpha-Directives.html#Alpha-Directives
+9.2.6 Opcodes
+    Alpha-Opcodes.html#Alpha-Opcodes
+9.3 ARC Dependent Features
+    ARC_002dDependent.html#ARC_002dDependent
+9.3.1 Options
+    ARC-Options.html#ARC-Options
+9.3.2 Syntax
+    ARC-Syntax.html#ARC-Syntax
+9.3.2.1 Special Characters
+    ARC_002dChars.html#ARC_002dChars
+9.3.2.2 Register Names
+    ARC_002dRegs.html#ARC_002dRegs
+9.3.3 Floating Point
+    ARC-Floating-Point.html#ARC-Floating-Point
+9.3.4 ARC Machine Directives
+    ARC-Directives.html#ARC-Directives
+9.3.5 Opcodes
+    ARC-Opcodes.html#ARC-Opcodes
+9.4 ARM Dependent Features
+    ARM_002dDependent.html#ARM_002dDependent
+9.4.1 Options
+    ARM-Options.html#ARM-Options
+9.4.2 Syntax
+    ARM-Syntax.html#ARM-Syntax
+9.4.2.1 Instruction Set Syntax
+    ARM_002dInstruction_002dSet.html#ARM_002dInstruction_002dSet
+9.4.2.2 Special Characters
+    ARM_002dChars.html#ARM_002dChars
+9.4.2.3 Register Names
+    ARM_002dRegs.html#ARM_002dRegs
+9.4.2.4 ARM relocation generation
+    ARM_002dRelocations.html#ARM_002dRelocations
+9.4.2.5 NEON Alignment Specifiers
+    ARM_002dNeon_002dAlignment.html#ARM_002dNeon_002dAlignment
+9.4.3 Floating Point
+    ARM-Floating-Point.html#ARM-Floating-Point
+9.4.4 ARM Machine Directives
+    ARM-Directives.html#ARM-Directives
+9.4.5 Opcodes
+    ARM-Opcodes.html#ARM-Opcodes
+9.4.6 Mapping Symbols
+    ARM-Mapping-Symbols.html#ARM-Mapping-Symbols
+9.4.7 Unwinding
+    ARM-Unwinding-Tutorial.html#ARM-Unwinding-Tutorial
+9.5 AVR Dependent Features
+    AVR_002dDependent.html#AVR_002dDependent
+9.5.1 Options
+    AVR-Options.html#AVR-Options
+9.5.2 Syntax
+    AVR-Syntax.html#AVR-Syntax
+9.5.2.1 Special Characters
+    AVR_002dChars.html#AVR_002dChars
+9.5.2.2 Register Names
+    AVR_002dRegs.html#AVR_002dRegs
+9.5.2.3 Relocatable Expression Modifiers
+    AVR_002dModifiers.html#AVR_002dModifiers
+9.5.3 Opcodes
+    AVR-Opcodes.html#AVR-Opcodes
+9.6 Blackfin Dependent Features
+    Blackfin_002dDependent.html#Blackfin_002dDependent
+9.6.1 Options
+    Blackfin-Options.html#Blackfin-Options
+9.6.2 Syntax
+    Blackfin-Syntax.html#Blackfin-Syntax
+9.6.3 Directives
+    Blackfin-Directives.html#Blackfin-Directives
+9.7 CR16 Dependent Features
+    CR16_002dDependent.html#CR16_002dDependent
+9.7.1 CR16 Operand Qualifiers
+    CR16-Operand-Qualifiers.html#CR16-Operand-Qualifiers
+9.7.2 CR16 Syntax
+    CR16-Syntax.html#CR16-Syntax
+9.7.2.1 Special Characters
+    CR16_002dChars.html#CR16_002dChars
+9.8 CRIS Dependent Features
+    CRIS_002dDependent.html#CRIS_002dDependent
+9.8.1 Command-line Options
+    CRIS_002dOpts.html#CRIS_002dOpts
+9.8.2 Instruction expansion
+    CRIS_002dExpand.html#CRIS_002dExpand
+9.8.3 Symbols
+    CRIS_002dSymbols.html#CRIS_002dSymbols
+9.8.4 Syntax
+    CRIS_002dSyntax.html#CRIS_002dSyntax
+9.8.4.1 Special Characters
+    CRIS_002dChars.html#CRIS_002dChars
+9.8.4.2 Symbols in position-independent code
+    CRIS_002dPic.html#CRIS_002dPic
+9.8.4.3 Register names
+    CRIS_002dRegs.html#CRIS_002dRegs
+9.8.4.4 Assembler Directives
+    CRIS_002dPseudos.html#CRIS_002dPseudos
+9.9 D10V Dependent Features
+    D10V_002dDependent.html#D10V_002dDependent
+9.9.1 D10V Options
+    D10V_002dOpts.html#D10V_002dOpts
+9.9.2 Syntax
+    D10V_002dSyntax.html#D10V_002dSyntax
+9.9.2.1 Size Modifiers
+    D10V_002dSize.html#D10V_002dSize
+9.9.2.2 Sub-Instructions
+    D10V_002dSubs.html#D10V_002dSubs
+9.9.2.3 Special Characters
+    D10V_002dChars.html#D10V_002dChars
+9.9.2.4 Register Names
+    D10V_002dRegs.html#D10V_002dRegs
+9.9.2.5 Addressing Modes
+    D10V_002dAddressing.html#D10V_002dAddressing
+9.9.2.6 @WORD Modifier
+    D10V_002dWord.html#D10V_002dWord
+9.9.3 Floating Point
+    D10V_002dFloat.html#D10V_002dFloat
+9.9.4 Opcodes
+    D10V_002dOpcodes.html#D10V_002dOpcodes
+9.10 D30V Dependent Features
+    D30V_002dDependent.html#D30V_002dDependent
+9.10.1 D30V Options
+    D30V_002dOpts.html#D30V_002dOpts
+9.10.2 Syntax
+    D30V_002dSyntax.html#D30V_002dSyntax
+9.10.2.1 Size Modifiers
+    D30V_002dSize.html#D30V_002dSize
+9.10.2.2 Sub-Instructions
+    D30V_002dSubs.html#D30V_002dSubs
+9.10.2.3 Special Characters
+    D30V_002dChars.html#D30V_002dChars
+9.10.2.4 Guarded Execution
+    D30V_002dGuarded.html#D30V_002dGuarded
+9.10.2.5 Register Names
+    D30V_002dRegs.html#D30V_002dRegs
+9.10.2.6 Addressing Modes
+    D30V_002dAddressing.html#D30V_002dAddressing
+9.10.3 Floating Point
+    D30V_002dFloat.html#D30V_002dFloat
+9.10.4 Opcodes
+    D30V_002dOpcodes.html#D30V_002dOpcodes
+9.11 Epiphany Dependent Features
+    Epiphany_002dDependent.html#Epiphany_002dDependent
+9.11.1 Options
+    Epiphany-Options.html#Epiphany-Options
+9.11.2 Epiphany Syntax
+    Epiphany-Syntax.html#Epiphany-Syntax
+9.11.2.1 Special Characters
+    Epiphany_002dChars.html#Epiphany_002dChars
+9.12 H8/300 Dependent Features
+    H8_002f300_002dDependent.html#H8_002f300_002dDependent
+9.12.1 Options
+    H8_002f300-Options.html#H8_002f300-Options
+9.12.2 Syntax
+    H8_002f300-Syntax.html#H8_002f300-Syntax
+9.12.2.1 Special Characters
+    H8_002f300_002dChars.html#H8_002f300_002dChars
+9.12.2.2 Register Names
+    H8_002f300_002dRegs.html#H8_002f300_002dRegs
+9.12.2.3 Addressing Modes
+    H8_002f300_002dAddressing.html#H8_002f300_002dAddressing
+9.12.3 Floating Point
+    H8_002f300-Floating-Point.html#H8_002f300-Floating-Point
+9.12.4 H8/300 Machine Directives
+    H8_002f300-Directives.html#H8_002f300-Directives
+9.12.5 Opcodes
+    H8_002f300-Opcodes.html#H8_002f300-Opcodes
+9.13 HPPA Dependent Features
+    HPPA_002dDependent.html#HPPA_002dDependent
+9.13.1 Notes
+    HPPA-Notes.html#HPPA-Notes
+9.13.2 Options
+    HPPA-Options.html#HPPA-Options
+9.13.3 Syntax
+    HPPA-Syntax.html#HPPA-Syntax
+9.13.4 Floating Point
+    HPPA-Floating-Point.html#HPPA-Floating-Point
+9.13.5 HPPA Assembler Directives
+    HPPA-Directives.html#HPPA-Directives
+9.13.6 Opcodes
+    HPPA-Opcodes.html#HPPA-Opcodes
+9.14 ESA/390 Dependent Features
+    ESA_002f390_002dDependent.html#ESA_002f390_002dDependent
+9.14.1 Notes
+    ESA_002f390-Notes.html#ESA_002f390-Notes
+9.14.2 Options
+    ESA_002f390-Options.html#ESA_002f390-Options
+9.14.3 Syntax
+    ESA_002f390-Syntax.html#ESA_002f390-Syntax
+9.14.4 Floating Point
+    ESA_002f390-Floating-Point.html#ESA_002f390-Floating-Point
+9.14.5 ESA/390 Assembler Directives
+    ESA_002f390-Directives.html#ESA_002f390-Directives
+9.14.6 Opcodes
+    ESA_002f390-Opcodes.html#ESA_002f390-Opcodes
+9.15 80386 Dependent Features
+    i386_002dDependent.html#i386_002dDependent
+9.15.1 Options
+    i386_002dOptions.html#i386_002dOptions
+9.15.2 x86 specific Directives
+    i386_002dDirectives.html#i386_002dDirectives
+9.15.3 i386 Syntactical Considerations
+    i386_002dSyntax.html#i386_002dSyntax
+9.15.3.1 AT&amp;T Syntax versus Intel Syntax
+    i386_002dVariations.html#i386_002dVariations
+9.15.3.2 Special Characters
+    i386_002dChars.html#i386_002dChars
+9.15.4 Instruction Naming
+    i386_002dMnemonics.html#i386_002dMnemonics
+9.15.5 AT&amp;T Mnemonic versus Intel Mnemonic
+    i386_002dMnemonics.html#i386_002dMnemonics
+9.15.6 Register Naming
+    i386_002dRegs.html#i386_002dRegs
+9.15.7 Instruction Prefixes
+    i386_002dPrefixes.html#i386_002dPrefixes
+9.15.8 Memory References
+    i386_002dMemory.html#i386_002dMemory
+9.15.9 Handling of Jump Instructions
+    i386_002dJumps.html#i386_002dJumps
+9.15.10 Floating Point
+    i386_002dFloat.html#i386_002dFloat
+9.15.11 Intel's MMX and AMD's 3DNow! SIMD Operations
+    i386_002dSIMD.html#i386_002dSIMD
+9.15.12 AMD's Lightweight Profiling Instructions
+    i386_002dLWP.html#i386_002dLWP
+9.15.13 Bit Manipulation Instructions
+    i386_002dBMI.html#i386_002dBMI
+9.15.14 AMD's Trailing Bit Manipulation Instructions
+    i386_002dTBM.html#i386_002dTBM
+9.15.15 Writing 16-bit Code
+    i386_002d16bit.html#i386_002d16bit
+9.15.16 AT&amp;T Syntax bugs
+    i386_002dBugs.html#i386_002dBugs
+9.15.17 Specifying CPU Architecture
+    i386_002dArch.html#i386_002dArch
+9.15.18 Notes
+    i386_002dNotes.html#i386_002dNotes
+9.16 Intel i860 Dependent Features
+    i860_002dDependent.html#i860_002dDependent
+9.16.1 i860 Notes
+    Notes_002di860.html#Notes_002di860
+9.16.2 i860 Command-line Options
+    Options_002di860.html#Options_002di860
+9.16.2.1 SVR4 compatibility options
+    Options_002di860.html#Options_002di860
+9.16.2.2 Other options
+    Options_002di860.html#Options_002di860
+9.16.3 i860 Machine Directives
+    Directives_002di860.html#Directives_002di860
+9.16.4 i860 Opcodes
+    Opcodes-for-i860.html#Opcodes-for-i860
+9.16.4.1 Other instruction support (pseudo-instructions)
+    Opcodes-for-i860.html#Opcodes-for-i860
+9.16.5 i860 Syntax
+    Syntax-of-i860.html#Syntax-of-i860
+9.16.5.1 Special Characters
+    i860_002dChars.html#i860_002dChars
+9.17 Intel 80960 Dependent Features
+    i960_002dDependent.html#i960_002dDependent
+9.17.1 i960 Command-line Options
+    Options_002di960.html#Options_002di960
+9.17.2 Floating Point
+    Floating-Point_002di960.html#Floating-Point_002di960
+9.17.3 i960 Machine Directives
+    Directives_002di960.html#Directives_002di960
+9.17.4 i960 Opcodes
+    Opcodes-for-i960.html#Opcodes-for-i960
+9.17.4.1 callj
+    callj_002di960.html#callj_002di960
+9.17.4.2 Compare-and-Branch
+    Compare_002dand_002dbranch_002di960.html#Compare_002dand_002dbranch_002di960
+9.17.5 Syntax for the i960
+    Syntax-of-i960.html#Syntax-of-i960
+9.17.5.1 Special Characters
+    i960_002dChars.html#i960_002dChars
+9.18 IA-64 Dependent Features
+    IA_002d64_002dDependent.html#IA_002d64_002dDependent
+9.18.1 Options
+    IA_002d64-Options.html#IA_002d64-Options
+9.18.2 Syntax
+    IA_002d64-Syntax.html#IA_002d64-Syntax
+9.18.2.1 Special Characters
+    IA_002d64_002dChars.html#IA_002d64_002dChars
+9.18.2.2 Register Names
+    IA_002d64_002dRegs.html#IA_002d64_002dRegs
+9.18.2.3 IA-64 Processor-Status-Register (PSR) Bit Names
+    IA_002d64_002dBits.html#IA_002d64_002dBits
+9.18.2.4 Relocations
+    IA_002d64_002dRelocs.html#IA_002d64_002dRelocs
+9.18.3 Opcodes
+    IA_002d64-Opcodes.html#IA_002d64-Opcodes
+9.19 IP2K Dependent Features
+    IP2K_002dDependent.html#IP2K_002dDependent
+9.19.1 IP2K Options
+    IP2K_002dOpts.html#IP2K_002dOpts
+9.19.2 IP2K Syntax
+    IP2K_002dSyntax.html#IP2K_002dSyntax
+9.19.2.1 Special Characters
+    IP2K_002dChars.html#IP2K_002dChars
+9.20 LM32 Dependent Features
+    LM32_002dDependent.html#LM32_002dDependent
+9.20.1 Options
+    LM32-Options.html#LM32-Options
+9.20.2 Syntax
+    LM32-Syntax.html#LM32-Syntax
+9.20.2.1 Register Names
+    LM32_002dRegs.html#LM32_002dRegs
+9.20.2.2 Relocatable Expression Modifiers
+    LM32_002dModifiers.html#LM32_002dModifiers
+9.20.2.3 Special Characters
+    LM32_002dChars.html#LM32_002dChars
+9.20.3 Opcodes
+    LM32-Opcodes.html#LM32-Opcodes
+9.21 M32C Dependent Features
+    M32C_002dDependent.html#M32C_002dDependent
+9.21.1 M32C Options
+    M32C_002dOpts.html#M32C_002dOpts
+9.21.2 M32C Syntax
+    M32C_002dSyntax.html#M32C_002dSyntax
+9.21.2.1 Symbolic Operand Modifiers
+    M32C_002dModifiers.html#M32C_002dModifiers
+9.21.2.2 Special Characters
+    M32C_002dChars.html#M32C_002dChars
+9.22 M32R Dependent Features
+    M32R_002dDependent.html#M32R_002dDependent
+9.22.1 M32R Options
+    M32R_002dOpts.html#M32R_002dOpts
+9.22.2 M32R Directives
+    M32R_002dDirectives.html#M32R_002dDirectives
+9.22.3 M32R Warnings
+    M32R_002dWarnings.html#M32R_002dWarnings
+9.23 M680x0 Dependent Features
+    M68K_002dDependent.html#M68K_002dDependent
+9.23.1 M680x0 Options
+    M68K_002dOpts.html#M68K_002dOpts
+9.23.2 Syntax
+    M68K_002dSyntax.html#M68K_002dSyntax
+9.23.3 Motorola Syntax
+    M68K_002dMoto_002dSyntax.html#M68K_002dMoto_002dSyntax
+9.23.4 Floating Point
+    M68K_002dFloat.html#M68K_002dFloat
+9.23.5 680x0 Machine Directives
+    M68K_002dDirectives.html#M68K_002dDirectives
+9.23.6 Opcodes
+    M68K_002dopcodes.html#M68K_002dopcodes
+9.23.6.1 Branch Improvement
+    M68K_002dBranch.html#M68K_002dBranch
+9.23.6.2 Special Characters
+    M68K_002dChars.html#M68K_002dChars
+9.24 M68HC11 and M68HC12 Dependent Features
+    M68HC11_002dDependent.html#M68HC11_002dDependent
+9.24.1 M68HC11 and M68HC12 Options
+    M68HC11_002dOpts.html#M68HC11_002dOpts
+9.24.2 Syntax
+    M68HC11_002dSyntax.html#M68HC11_002dSyntax
+9.24.3 Symbolic Operand Modifiers
+    M68HC11_002dModifiers.html#M68HC11_002dModifiers
+9.24.4 Assembler Directives
+    M68HC11_002dDirectives.html#M68HC11_002dDirectives
+9.24.5 Floating Point
+    M68HC11_002dFloat.html#M68HC11_002dFloat
+9.24.6 Opcodes
+    M68HC11_002dopcodes.html#M68HC11_002dopcodes
+9.24.6.1 Branch Improvement
+    M68HC11_002dBranch.html#M68HC11_002dBranch
+9.25 Meta Dependent Features
+    Meta_002dDependent.html#Meta_002dDependent
+9.25.1 Options
+    Meta-Options.html#Meta-Options
+9.25.2 Syntax
+    Meta-Syntax.html#Meta-Syntax
+9.25.2.1 Special Characters
+    Meta_002dChars.html#Meta_002dChars
+9.25.2.2 Register Names
+    Meta_002dRegs.html#Meta_002dRegs
+9.26 MicroBlaze Dependent Features
+    MicroBlaze_002dDependent.html#MicroBlaze_002dDependent
+9.26.1 Directives
+    MicroBlaze-Directives.html#MicroBlaze-Directives
+9.26.2 Syntax for the MicroBlaze
+    MicroBlaze-Syntax.html#MicroBlaze-Syntax
+9.26.2.1 Special Characters
+    MicroBlaze_002dChars.html#MicroBlaze_002dChars
+9.27 MIPS Dependent Features
+    MIPS_002dDependent.html#MIPS_002dDependent
+9.27.1 Assembler options
+    MIPS-Options.html#MIPS-Options
+9.27.2 High-level assembly macros
+    MIPS-Macros.html#MIPS-Macros
+9.27.3 Directives to override the size of symbols
+    MIPS-Symbol-Sizes.html#MIPS-Symbol-Sizes
+9.27.4 Controlling the use of small data accesses
+    MIPS-Small-Data.html#MIPS-Small-Data
+9.27.5 Directives to override the ISA level
+    MIPS-ISA.html#MIPS-ISA
+9.27.6 Directives to control code generation
+    MIPS-assembly-options.html#MIPS-assembly-options
+9.27.7 Directives for extending MIPS 16 bit instructions
+    MIPS-autoextend.html#MIPS-autoextend
+9.27.8 Directive to mark data as an instruction
+    MIPS-insn.html#MIPS-insn
+9.27.9 Directives to control the FP ABI
+    MIPS-FP-ABIs.html#MIPS-FP-ABIs
+9.27.9.1 History of FP ABIs
+    MIPS-FP-ABI-History.html#MIPS-FP-ABI-History
+9.27.9.2 Supported FP ABIs
+    MIPS-FP-ABI-Variants.html#MIPS-FP-ABI-Variants
+9.27.9.3 Automatic selection of FP ABI
+    MIPS-FP-ABI-Selection.html#MIPS-FP-ABI-Selection
+9.27.9.4 Linking different FP ABI variants
+    MIPS-FP-ABI-Compatibility.html#MIPS-FP-ABI-Compatibility
+9.27.10 Directives to record which NaN encoding is being used
+    MIPS-NaN-Encodings.html#MIPS-NaN-Encodings
+9.27.11 Directives to save and restore options
+    MIPS-Option-Stack.html#MIPS-Option-Stack
+9.27.12 Directives to control generation of MIPS ASE instructions
+    MIPS-ASE-Instruction-Generation-Overrides.html#MIPS-ASE-Instruction-Generation-Overrides
+9.27.13 Directives to override floating-point options
+    MIPS-Floating_002dPoint.html#MIPS-Floating_002dPoint
+9.27.14 Syntactical considerations for the MIPS assembler
+    MIPS-Syntax.html#MIPS-Syntax
+9.27.14.1 Special Characters
+    MIPS_002dChars.html#MIPS_002dChars
+9.28 MMIX Dependent Features
+    MMIX_002dDependent.html#MMIX_002dDependent
+9.28.1 Command-line Options
+    MMIX_002dOpts.html#MMIX_002dOpts
+9.28.2 Instruction expansion
+    MMIX_002dExpand.html#MMIX_002dExpand
+9.28.3 Syntax
+    MMIX_002dSyntax.html#MMIX_002dSyntax
+9.28.3.1 Special Characters
+    MMIX_002dChars.html#MMIX_002dChars
+9.28.3.2 Symbols
+    MMIX_002dSymbols.html#MMIX_002dSymbols
+9.28.3.3 Register names
+    MMIX_002dRegs.html#MMIX_002dRegs
+9.28.3.4 Assembler Directives
+    MMIX_002dPseudos.html#MMIX_002dPseudos
+9.28.4 Differences to mmixal
+    MMIX_002dmmixal.html#MMIX_002dmmixal
+9.29 MSP 430 Dependent Features
+    MSP430_002dDependent.html#MSP430_002dDependent
+9.29.1 Options
+    MSP430-Options.html#MSP430-Options
+9.29.2 Syntax
+    MSP430-Syntax.html#MSP430-Syntax
+9.29.2.1 Macros
+    MSP430_002dMacros.html#MSP430_002dMacros
+9.29.2.2 Special Characters
+    MSP430_002dChars.html#MSP430_002dChars
+9.29.2.3 Register Names
+    MSP430_002dRegs.html#MSP430_002dRegs
+9.29.2.4 Assembler Extensions
+    MSP430_002dExt.html#MSP430_002dExt
+9.29.3 Floating Point
+    MSP430-Floating-Point.html#MSP430-Floating-Point
+9.29.4 MSP 430 Machine Directives
+    MSP430-Directives.html#MSP430-Directives
+9.29.5 Opcodes
+    MSP430-Opcodes.html#MSP430-Opcodes
+9.29.6 Profiling Capability
+    MSP430-Profiling-Capability.html#MSP430-Profiling-Capability
+9.30 NDS32 Dependent Features
+    NDS32_002dDependent.html#NDS32_002dDependent
+9.30.1 NDS32 Options
+    NDS32-Options.html#NDS32-Options
+9.30.2 Syntax
+    NDS32-Syntax.html#NDS32-Syntax
+9.30.2.1 Special Characters
+    NDS32_002dChars.html#NDS32_002dChars
+9.30.2.2 Register Names
+    NDS32_002dRegs.html#NDS32_002dRegs
+9.30.2.3 Pseudo Instructions
+    NDS32_002dOps.html#NDS32_002dOps
+9.31 Nios II Dependent Features
+    NiosII_002dDependent.html#NiosII_002dDependent
+9.31.1 Options
+    Nios-II-Options.html#Nios-II-Options
+9.31.2 Syntax
+    Nios-II-Syntax.html#Nios-II-Syntax
+9.31.2.1 Special Characters
+    Nios-II-Chars.html#Nios-II-Chars
+9.31.3 Nios II Machine Relocations
+    Nios-II-Relocations.html#Nios-II-Relocations
+9.31.4 Nios II Machine Directives
+    Nios-II-Directives.html#Nios-II-Directives
+9.31.5 Opcodes
+    Nios-II-Opcodes.html#Nios-II-Opcodes
+9.32 NS32K Dependent Features
+    NS32K_002dDependent.html#NS32K_002dDependent
+9.32.1 Syntax
+    NS32K-Syntax.html#NS32K-Syntax
+9.32.1.1 Special Characters
+    NS32K_002dChars.html#NS32K_002dChars
+9.33 PDP-11 Dependent Features
+    PDP_002d11_002dDependent.html#PDP_002d11_002dDependent
+9.33.1 Options
+    PDP_002d11_002dOptions.html#PDP_002d11_002dOptions
+9.33.1.1 Code Generation Options
+    PDP_002d11_002dOptions.html#PDP_002d11_002dOptions
+9.33.1.2 Instruction Set Extension Options
+    PDP_002d11_002dOptions.html#PDP_002d11_002dOptions
+9.33.1.3 CPU Model Options
+    PDP_002d11_002dOptions.html#PDP_002d11_002dOptions
+9.33.1.4 Machine Model Options
+    PDP_002d11_002dOptions.html#PDP_002d11_002dOptions
+9.33.2 Assembler Directives
+    PDP_002d11_002dPseudos.html#PDP_002d11_002dPseudos
+9.33.3 PDP-11 Assembly Language Syntax
+    PDP_002d11_002dSyntax.html#PDP_002d11_002dSyntax
+9.33.4 Instruction Naming
+    PDP_002d11_002dMnemonics.html#PDP_002d11_002dMnemonics
+9.33.5 Synthetic Instructions
+    PDP_002d11_002dSynthetic.html#PDP_002d11_002dSynthetic
+9.34 picoJava Dependent Features
+    PJ_002dDependent.html#PJ_002dDependent
+9.34.1 Options
+    PJ-Options.html#PJ-Options
+9.34.2 PJ Syntax
+    PJ-Syntax.html#PJ-Syntax
+9.34.2.1 Special Characters
+    PJ_002dChars.html#PJ_002dChars
+9.35 PowerPC Dependent Features
+    PPC_002dDependent.html#PPC_002dDependent
+9.35.1 Options
+    PowerPC_002dOpts.html#PowerPC_002dOpts
+9.35.2 PowerPC Assembler Directives
+    PowerPC_002dPseudo.html#PowerPC_002dPseudo
+9.35.3 PowerPC Syntax
+    PowerPC_002dSyntax.html#PowerPC_002dSyntax
+9.35.3.1 Special Characters
+    PowerPC_002dChars.html#PowerPC_002dChars
+9.36 RL78 Dependent Features
+    RL78_002dDependent.html#RL78_002dDependent
+9.36.1 RL78 Options
+    RL78_002dOpts.html#RL78_002dOpts
+9.36.2 Symbolic Operand Modifiers
+    RL78_002dModifiers.html#RL78_002dModifiers
+9.36.3 Assembler Directives
+    RL78_002dDirectives.html#RL78_002dDirectives
+9.36.4 Syntax for the RL78
+    RL78_002dSyntax.html#RL78_002dSyntax
+9.36.4.1 Special Characters
+    RL78_002dChars.html#RL78_002dChars
+9.37 RX Dependent Features
+    RX_002dDependent.html#RX_002dDependent
+9.37.1 RX Options
+    RX_002dOpts.html#RX_002dOpts
+9.37.2 Symbolic Operand Modifiers
+    RX_002dModifiers.html#RX_002dModifiers
+9.37.3 Assembler Directives
+    RX_002dDirectives.html#RX_002dDirectives
+9.37.4 Floating Point
+    RX_002dFloat.html#RX_002dFloat
+9.37.5 Syntax for the RX
+    RX_002dSyntax.html#RX_002dSyntax
+9.37.5.1 Special Characters
+    RX_002dChars.html#RX_002dChars
+9.38 IBM S/390 Dependent Features
+    S_002f390_002dDependent.html#S_002f390_002dDependent
+9.38.1 Options
+    s390-Options.html#s390-Options
+9.38.2 Special Characters
+    s390-Characters.html#s390-Characters
+9.38.3 Instruction syntax
+    s390-Syntax.html#s390-Syntax
+9.38.3.1 Register naming
+    s390-Register.html#s390-Register
+9.38.3.2 Instruction Mnemonics
+    s390-Mnemonics.html#s390-Mnemonics
+9.38.3.3 Instruction Operands
+    s390-Operands.html#s390-Operands
+9.38.3.4 Instruction Formats
+    s390-Formats.html#s390-Formats
+9.38.3.5 Instruction Aliases
+    s390-Aliases.html#s390-Aliases
+9.38.3.6 Instruction Operand Modifier
+    s390-Operand-Modifier.html#s390-Operand-Modifier
+9.38.3.7 Instruction Marker
+    s390-Instruction-Marker.html#s390-Instruction-Marker
+9.38.3.8 Literal Pool Entries
+    s390-Literal-Pool-Entries.html#s390-Literal-Pool-Entries
+9.38.4 Assembler Directives
+    s390-Directives.html#s390-Directives
+9.38.5 Floating Point
+    s390-Floating-Point.html#s390-Floating-Point
+9.39 SCORE Dependent Features
+    SCORE_002dDependent.html#SCORE_002dDependent
+9.39.1 Options
+    SCORE_002dOpts.html#SCORE_002dOpts
+9.39.2 SCORE Assembler Directives
+    SCORE_002dPseudo.html#SCORE_002dPseudo
+9.39.3 SCORE Syntax
+    SCORE_002dSyntax.html#SCORE_002dSyntax
+9.39.3.1 Special Characters
+    SCORE_002dChars.html#SCORE_002dChars
+9.40 Renesas / SuperH SH Dependent Features
+    SH_002dDependent.html#SH_002dDependent
+9.40.1 Options
+    SH-Options.html#SH-Options
+9.40.2 Syntax
+    SH-Syntax.html#SH-Syntax
+9.40.2.1 Special Characters
+    SH_002dChars.html#SH_002dChars
+9.40.2.2 Register Names
+    SH_002dRegs.html#SH_002dRegs
+9.40.2.3 Addressing Modes
+    SH_002dAddressing.html#SH_002dAddressing
+9.40.3 Floating Point
+    SH-Floating-Point.html#SH-Floating-Point
+9.40.4 SH Machine Directives
+    SH-Directives.html#SH-Directives
+9.40.5 Opcodes
+    SH-Opcodes.html#SH-Opcodes
+9.41 SuperH SH64 Dependent Features
+    SH64_002dDependent.html#SH64_002dDependent
+9.41.1 Options
+    SH64-Options.html#SH64-Options
+9.41.2 Syntax
+    SH64-Syntax.html#SH64-Syntax
+9.41.2.1 Special Characters
+    SH64_002dChars.html#SH64_002dChars
+9.41.2.2 Register Names
+    SH64_002dRegs.html#SH64_002dRegs
+9.41.2.3 Addressing Modes
+    SH64_002dAddressing.html#SH64_002dAddressing
+9.41.3 SH64 Machine Directives
+    SH64-Directives.html#SH64-Directives
+9.41.4 Opcodes
+    SH64-Opcodes.html#SH64-Opcodes
+9.42 SPARC Dependent Features
+    Sparc_002dDependent.html#Sparc_002dDependent
+9.42.1 Options
+    Sparc_002dOpts.html#Sparc_002dOpts
+9.42.2 Enforcing aligned data
+    Sparc_002dAligned_002dData.html#Sparc_002dAligned_002dData
+9.42.3 Sparc Syntax
+    Sparc_002dSyntax.html#Sparc_002dSyntax
+9.42.3.1 Special Characters
+    Sparc_002dChars.html#Sparc_002dChars
+9.42.3.2 Register Names
+    Sparc_002dRegs.html#Sparc_002dRegs
+9.42.3.3 Constants
+    Sparc_002dConstants.html#Sparc_002dConstants
+9.42.3.4 Relocations
+    Sparc_002dRelocs.html#Sparc_002dRelocs
+9.42.3.5 Size Translations
+    Sparc_002dSize_002dTranslations.html#Sparc_002dSize_002dTranslations
+9.42.4 Floating Point
+    Sparc_002dFloat.html#Sparc_002dFloat
+9.42.5 Sparc Machine Directives
+    Sparc_002dDirectives.html#Sparc_002dDirectives
+9.43 TIC54X Dependent Features
+    TIC54X_002dDependent.html#TIC54X_002dDependent
+9.43.1 Options
+    TIC54X_002dOpts.html#TIC54X_002dOpts
+9.43.2 Blocking
+    TIC54X_002dBlock.html#TIC54X_002dBlock
+9.43.3 Environment Settings
+    TIC54X_002dEnv.html#TIC54X_002dEnv
+9.43.4 Constants Syntax
+    TIC54X_002dConstants.html#TIC54X_002dConstants
+9.43.5 String Substitution
+    TIC54X_002dSubsyms.html#TIC54X_002dSubsyms
+9.43.6 Local Labels
+    TIC54X_002dLocals.html#TIC54X_002dLocals
+9.43.7 Math Builtins
+    TIC54X_002dBuiltins.html#TIC54X_002dBuiltins
+9.43.8 Extended Addressing
+    TIC54X_002dExt.html#TIC54X_002dExt
+9.43.9 Directives
+    TIC54X_002dDirectives.html#TIC54X_002dDirectives
+9.43.10 Macros
+    TIC54X_002dMacros.html#TIC54X_002dMacros
+9.43.11 Memory-mapped Registers
+    TIC54X_002dMMRegs.html#TIC54X_002dMMRegs
+9.43.12 TIC54X Syntax
+    TIC54X_002dSyntax.html#TIC54X_002dSyntax
+9.43.12.1 Special Characters
+    TIC54X_002dChars.html#TIC54X_002dChars
+9.44 TIC6X Dependent Features
+    TIC6X_002dDependent.html#TIC6X_002dDependent
+9.44.1 TIC6X Options
+    TIC6X-Options.html#TIC6X-Options
+9.44.2 TIC6X Syntax
+    TIC6X-Syntax.html#TIC6X-Syntax
+9.44.3 TIC6X Directives
+    TIC6X-Directives.html#TIC6X-Directives
+9.45 TILE-Gx Dependent Features
+    TILE_002dGx_002dDependent.html#TILE_002dGx_002dDependent
+9.45.1 Options
+    TILE_002dGx-Options.html#TILE_002dGx-Options
+9.45.2 Syntax
+    TILE_002dGx-Syntax.html#TILE_002dGx-Syntax
+9.45.2.1 Opcode Names
+    TILE_002dGx-Opcodes.html#TILE_002dGx-Opcodes
+9.45.2.2 Register Names
+    TILE_002dGx-Registers.html#TILE_002dGx-Registers
+9.45.2.3 Symbolic Operand Modifiers
+    TILE_002dGx-Modifiers.html#TILE_002dGx-Modifiers
+9.45.3 TILE-Gx Directives
+    TILE_002dGx-Directives.html#TILE_002dGx-Directives
+9.46 TILEPro Dependent Features
+    TILEPro_002dDependent.html#TILEPro_002dDependent
+9.46.1 Options
+    TILEPro-Options.html#TILEPro-Options
+9.46.2 Syntax
+    TILEPro-Syntax.html#TILEPro-Syntax
+9.46.2.1 Opcode Names
+    TILEPro-Opcodes.html#TILEPro-Opcodes
+9.46.2.2 Register Names
+    TILEPro-Registers.html#TILEPro-Registers
+9.46.2.3 Symbolic Operand Modifiers
+    TILEPro-Modifiers.html#TILEPro-Modifiers
+9.46.3 TILEPro Directives
+    TILEPro-Directives.html#TILEPro-Directives
+9.47 Z80 Dependent Features
+    Z80_002dDependent.html#Z80_002dDependent
+9.47.1 Options
+    Z80-Options.html#Z80-Options
+9.47.2 Syntax
+    Z80-Syntax.html#Z80-Syntax
+9.47.2.1 Special Characters
+    Z80_002dChars.html#Z80_002dChars
+9.47.2.2 Register Names
+    Z80_002dRegs.html#Z80_002dRegs
+9.47.2.3 Case Sensitivity
+    Z80_002dCase.html#Z80_002dCase
+9.47.3 Floating Point
+    Z80-Floating-Point.html#Z80-Floating-Point
+9.47.4 Z80 Assembler Directives
+    Z80-Directives.html#Z80-Directives
+9.47.5 Opcodes
+    Z80-Opcodes.html#Z80-Opcodes
+9.48 Z8000 Dependent Features
+    Z8000_002dDependent.html#Z8000_002dDependent
+9.48.1 Options
+    Z8000-Options.html#Z8000-Options
+9.48.2 Syntax
+    Z8000-Syntax.html#Z8000-Syntax
+9.48.2.1 Special Characters
+    Z8000_002dChars.html#Z8000_002dChars
+9.48.2.2 Register Names
+    Z8000_002dRegs.html#Z8000_002dRegs
+9.48.2.3 Addressing Modes
+    Z8000_002dAddressing.html#Z8000_002dAddressing
+9.48.3 Assembler Directives for the Z8000
+    Z8000-Directives.html#Z8000-Directives
+9.48.4 Opcodes
+    Z8000-Opcodes.html#Z8000-Opcodes
+9.49 VAX Dependent Features
+    Vax_002dDependent.html#Vax_002dDependent
+9.49.1 VAX Command-Line Options
+    VAX_002dOpts.html#VAX_002dOpts
+9.49.2 VAX Floating Point
+    VAX_002dfloat.html#VAX_002dfloat
+9.49.3 Vax Machine Directives
+    VAX_002ddirectives.html#VAX_002ddirectives
+9.49.4 VAX Opcodes
+    VAX_002dopcodes.html#VAX_002dopcodes
+9.49.5 VAX Branch Improvement
+    VAX_002dbranch.html#VAX_002dbranch
+9.49.6 VAX Operands
+    VAX_002doperands.html#VAX_002doperands
+9.49.7 Not Supported on VAX
+    VAX_002dno.html#VAX_002dno
+9.49.8 VAX Syntax
+    VAX_002dSyntax.html#VAX_002dSyntax
+9.49.8.1 Special Characters
+    VAX_002dChars.html#VAX_002dChars
+9.50 v850 Dependent Features
+    V850_002dDependent.html#V850_002dDependent
+9.50.1 Options
+    V850-Options.html#V850-Options
+9.50.2 Syntax
+    V850-Syntax.html#V850-Syntax
+9.50.2.1 Special Characters
+    V850_002dChars.html#V850_002dChars
+9.50.2.2 Register Names
+    V850_002dRegs.html#V850_002dRegs
+9.50.3 Floating Point
+    V850-Floating-Point.html#V850-Floating-Point
+9.50.4 V850 Machine Directives
+    V850-Directives.html#V850-Directives
+9.50.5 Opcodes
+    V850-Opcodes.html#V850-Opcodes
+9.51 XGATE Dependent Features
+    XGATE_002dDependent.html#XGATE_002dDependent
+9.51.1 XGATE Options
+    XGATE_002dOpts.html#XGATE_002dOpts
+9.51.2 Syntax
+    XGATE_002dSyntax.html#XGATE_002dSyntax
+9.51.3 Assembler Directives
+    XGATE_002dDirectives.html#XGATE_002dDirectives
+9.51.4 Floating Point
+    XGATE_002dFloat.html#XGATE_002dFloat
+9.51.5 Opcodes
+    XGATE_002dopcodes.html#XGATE_002dopcodes
+9.52 XStormy16 Dependent Features
+    XSTORMY16_002dDependent.html#XSTORMY16_002dDependent
+9.52.1 Syntax
+    XStormy16-Syntax.html#XStormy16-Syntax
+9.52.1.1 Special Characters
+    XStormy16_002dChars.html#XStormy16_002dChars
+9.52.2 XStormy16 Machine Directives
+    XStormy16-Directives.html#XStormy16-Directives
+9.52.3 XStormy16 Pseudo-Opcodes
+    XStormy16-Opcodes.html#XStormy16-Opcodes
+9.53 Xtensa Dependent Features
+    Xtensa_002dDependent.html#Xtensa_002dDependent
+9.53.1 Command Line Options
+    Xtensa-Options.html#Xtensa-Options
+9.53.2 Assembler Syntax
+    Xtensa-Syntax.html#Xtensa-Syntax
+9.53.2.1 Opcode Names
+    Xtensa-Opcodes.html#Xtensa-Opcodes
+9.53.2.2 Register Names
+    Xtensa-Registers.html#Xtensa-Registers
+9.53.3 Xtensa Optimizations
+    Xtensa-Optimizations.html#Xtensa-Optimizations
+9.53.3.1 Using Density Instructions
+    Density-Instructions.html#Density-Instructions
+9.53.3.2 Automatic Instruction Alignment
+    Xtensa-Automatic-Alignment.html#Xtensa-Automatic-Alignment
+9.53.4 Xtensa Relaxation
+    Xtensa-Relaxation.html#Xtensa-Relaxation
+9.53.4.1 Conditional Branch Relaxation
+    Xtensa-Branch-Relaxation.html#Xtensa-Branch-Relaxation
+9.53.4.2 Function Call Relaxation
+    Xtensa-Call-Relaxation.html#Xtensa-Call-Relaxation
+9.53.4.3 Jump Relaxation
+    Xtensa-Jump-Relaxation.html#Xtensa-Jump-Relaxation
+9.53.4.4 Other Immediate Field Relaxation
+    Xtensa-Immediate-Relaxation.html#Xtensa-Immediate-Relaxation
+9.53.5 Directives
+    Xtensa-Directives.html#Xtensa-Directives
+9.53.5.1 schedule
+    Schedule-Directive.html#Schedule-Directive
+9.53.5.2 longcalls
+    Longcalls-Directive.html#Longcalls-Directive
+9.53.5.3 transform
+    Transform-Directive.html#Transform-Directive
+9.53.5.4 literal
+    Literal-Directive.html#Literal-Directive
+9.53.5.5 literal_position
+    Literal-Position-Directive.html#Literal-Position-Directive
+9.53.5.6 literal_prefix
+    Literal-Prefix-Directive.html#Literal-Prefix-Directive
+9.53.5.7 absolute-literals
+    Absolute-Literals-Directive.html#Absolute-Literals-Directive
+10.1 Have You Found a Bug?
+    Bug-Criteria.html#Bug-Criteria
+10.2 How to Report Bugs
+    Bug-Reporting.html#Bug-Reporting
+Reporting Bugs
+    Reporting-Bugs.html#Reporting-Bugs
+Acknowledgements
+    Acknowledgements.html#Acknowledgements
+GNU Free Documentation License
+    GNU-Free-Documentation-License.html#GNU-Free-Documentation-License
+AS Index
+    AS-Index.html#AS-Index
